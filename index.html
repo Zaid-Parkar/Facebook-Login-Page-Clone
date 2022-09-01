@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <link rel="stylesheet" href="style.css">
-    <title>Facebook - login or signup</title>
-</head>
-<body>
-  <div class="container">
-<div class="left">
-      <img src="/fb-logo.svg" alt="fb logo">
-      <p>Facebook helps you connect and share with the people in your life.</p>
-</div>
-<div class="right">
-    <input type="text" name="Email address or password" id="">
-    <input type="password" name="password" id="">
-    <button class="btn">Log In</button>
-    <span>Forgotten password?</span>
-    <hr>
-    <button class="btn">Create Account</button>
-</div>
-  </div>
-</body>
+
+    <head>
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Facebook – log in or sign up</title>
+    </head>
+
+    <body class="bg-gray-100">
+        <div class="container mt-48 flex mx-auto items-center justify-center">
+            <div class="left w-1/2 mx-14">
+                <img class="w-80" src="/fb-logo.svg" alt="fb logo">
+                <p class="text-3xl mx-8">Facebook helps you connect and share with the people in your life.</p>
+            </div>
+            <div class="right flex flex-col bg-white p-8 rounded-lg w-1/4 text-lg relative">
+                <input class="px-4 h-12 my-2 border border-1 border-gray-200 rounded-lg outline-blue-600 " type="password" placeholder="password" id="">
+                <input class="px-4 h-12 my-2 border border-1 border-gray-200 rounded-lg outline-blue-600" type="text" placeholder="Email address or password" id="">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white my-2 p-3 rounded-md font-bold text-xl cursor-pointer">Log
+                    In</button>
+                <span class="text-blue-600  text-sm my-2 text-center cursor-pointer hover hover:underline">Forgotten
+                    password?</span>
+                <hr class="my-2">
+                <button class="bg-green-600 hover:bg-green-700 text-white my-2 p-3 rounded-md cursor-pointer w-fit px-4 mx-auto ">Create
+                    New Account</button>
+                <span class="absolute -bottom-14 text-sm "> <span class="font-bold hover:underline cursor-pointer">Create a
+                        Page</span> for a celebrity, brand or business.</span>
+            </div>
+            <!-- </div> -->
+    </body>
+
 </html>
